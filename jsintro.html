@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script>
+        let x = Math.floor((Math.random() * 10) + 1);
+        let n = prompt("Guess a number:");
+        let e = "Not matched";
+        if (x == n) {
+            e = "matched";
+        }
+        document.getElementById("demo1").innerHTML = e;
+        document.getElementById("demo2").innerHTML = document.URL;
+        document.getElementById("demo3").innerHTML = "x =" + typeof x + "<br>" +
+            "n =" + typeof n + "<br>" +
+            "e =" + typeof e + "<br>";
+
+        let pi = prompt("Enter the value of pi");
+        let r = prompt("Enter the radius:");
+        let area = pi * r * r;
+        document.getElementById("demo4").innerHTML = area;
+    </script>
+</body>
+
+</html>
